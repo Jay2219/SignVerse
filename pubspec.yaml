@@ -44,6 +44,8 @@ dependencies:
   shared_preferences: ^2.0.17
   line_icons: ^2.0.1
   google_nav_bar: ^5.0.6
+  youtube_player_flutter: ^8.1.2
+  modal_bottom_sheet: ^2.1.2
 
 
 dev_dependencies:

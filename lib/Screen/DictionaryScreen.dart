@@ -94,7 +94,7 @@ class HorizontalScrollCard extends StatelessWidget {
     'img': 'assets/imgs/A.png',
     'Link': '/A',
     'data': [
-        {'name': 'All', 'link': '123.com'},
+        {'name': 'All', 'link': 'https://youtu.be/GnyTLk-xwk8'},
         {'name': 'All', 'link': '123.com'},
         {'name': 'All', 'link': '123.com'},
         {'name': 'All', 'link': '123.com'},
