@@ -289,7 +289,15 @@ class HorizontalScrollCard extends StatelessWidget {
                 width: 170,
                 height: 220,
                 decoration: BoxDecoration(
-                  color: Color(0xff4339E7).withOpacity(0.5),
+                  color: Color(0xff4339E7),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.5),
+                      spreadRadius: 3,
+                      blurRadius: 7,
+                      offset: Offset(0, 3), // changes position of shadow
+                    ),
+                  ],
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Column(
@@ -298,8 +306,8 @@ class HorizontalScrollCard extends StatelessWidget {
                       width: double.infinity,
                       height: 170,
                       child: Image.asset(card['img']),
-                      decoration: BoxDecoration(
-                        color: Color(0xff4339E7).withOpacity(1),
+                      decoration: const BoxDecoration(
+                        color: Colors.white,
                         borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(20),
                           topRight: Radius.circular(20),
@@ -311,6 +319,7 @@ class HorizontalScrollCard extends StatelessWidget {
                       card['title'],
                       style: const TextStyle(
                         color: Colors.white,
+                        fontFamily: "Poppins",
                         fontWeight: FontWeight.bold,
                         fontSize: 20,
                       ),
