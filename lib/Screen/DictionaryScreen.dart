@@ -8,8 +8,6 @@ class DictionaryScreen extends StatefulWidget {
 }
 
 class _DictionaryScreenState extends State<DictionaryScreen> {
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -69,208 +67,155 @@ class _DictionaryScreenState extends State<DictionaryScreen> {
             ),
             child: HorizontalScrollCard(),
           ),
-
-
-
         ],
       ),
     );
   }
 }
 
-
-
-
-
 class HorizontalScrollCard extends StatelessWidget {
-
-
   @override
   Widget build(BuildContext context) {
-
     final List<Map<String, dynamic>> cardsData = [
-    {
-    'title': 'A',
-    'img': 'assets/imgs/A.png',
-    'Link': '/A',
-    'data': [
-        {'name': 'All', 'link': 'https://youtu.be/GnyTLk-xwk8'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-      ]
-    },
-
-    {
-    'title': 'B',
-    'img': 'assets/imgs/B.png',
-    'Link': '/B',
-      'data' : [
-        {'name': 'All', 'link': '123.com'},
-        {'name': 'All', 'link': '123.com'},
-      ]
-    },
-    {
-    'title': 'C',
-    'img': 'assets/imgs/C.png',
-    'Link': '/C',
-    },
-    {
-    'title': 'D',
-    'img': 'assets/imgs/D.png',
-    'Link': '/D',
-    },
-    {
-    'title': 'E',
-    'img': 'assets/imgs/E.png',
-    'Link': '/E',
-    },
-    {
-    'title': 'F',
-    'img': 'assets/imgs/F.png',
-    'Link': '/F',
-    },
-    {
-    'title': 'G',
-    'img': 'assets/imgs/G.png',
-    'Link': '/G',
-    },
-    {
-    'title': 'H',
-    'img': 'assets/imgs/H.png',
-    'Link': '/H',
-    },
-    {
-    'title': 'I',
-    'img': 'assets/imgs/I.png',
-    'Link': '/I',
-    },
-    {
-    'title': 'J',
-    'img': 'assets/imgs/J.png',
-    'Link': '/J',
-    },
-    {
-    'title': 'K',
-    'img': 'assets/imgs/K.png',
-    'Link': '/K',
-    },
-    {
-    'title': 'L',
-    'img': 'assets/imgs/L.png',
-    'Link': '/L',
-    },
-    {
-    'title': 'M',
-    'img': 'assets/imgs/M.png',
-    'Link': '/M',
-    },
-    {
-    'title': 'N',
-    'img': 'assets/imgs/N.png',
-    'Link': '/N',
-    },
-    {
-    'title': 'O',
-    'img': 'assets/imgs/O.png',
-    'Link': '/O',
-    },
-    {
-    'title': 'P',
-    'img': 'assets/imgs/P.png',
-    'Link': '/P',
-    },
-    {
-    'title': 'Q',
-    'img': 'assets/imgs/Q.png',
-    'Link': '/Q',
-    },
-    {
-    'title': 'R',
-    'img': 'assets/imgs/R.png',
-    'Link': '/R',
-    },
-    {
-    'title': 'S',
-    'img': 'assets/imgs/S.png',
-    'Link': '/S',
-    },
-    {
-    'title': 'T',
-    'img': 'assets/imgs/T.png',
-    'Link': '/T',
-    },
-    {
-    'title': 'U',
-    'img': 'assets/imgs/U.png',
-    'Link': '/U',
-    },
-    {
-    'title': 'V',
-    'img': 'assets/imgs/V.png',
-    'Link': '/V',
-    },
-    {
-    'title': 'W',
-    'img': 'assets/imgs/W.png',
-    'Link': '/W',
-    },
       {
-    'title': 'X',
-    'img': 'assets/imgs/X.png',
-    'Link': '/X',
-    },{
-    'title': 'Y',
-    'img': 'assets/imgs/Y.png',
-    'Link': '/Y',
-    },{
-    'title': 'Z',
-    'img': 'assets/imgs/Z.png',
-    'Link': '/Z',
-    }
-  ];
-
+        'title': 'A',
+        'img': 'assets/imgs/A.png',
+        'Link': '/A',
+        'data': [
+          {'name': 'All', 'link': 'https://youtu.be/GnyTLk-xwk8'},
+          {'name': 'All1', 'link': 'https://youtu.be/GnyTLk-xwk8'},
+        ]
+      },
+      {
+        'title': 'B',
+        'img': 'assets/imgs/B.png',
+        'Link': '/B',
+        'data': [
+          {'name': 'All', 'link': '123.com'},
+          {'name': 'All', 'link': '123.com'},
+        ]
+      },
+      {
+        'title': 'C',
+        'img': 'assets/imgs/C.png',
+        'Link': '/C',
+      },
+      {
+        'title': 'D',
+        'img': 'assets/imgs/D.png',
+        'Link': '/D',
+      },
+      {
+        'title': 'E',
+        'img': 'assets/imgs/E.png',
+        'Link': '/E',
+      },
+      {
+        'title': 'F',
+        'img': 'assets/imgs/F.png',
+        'Link': '/F',
+      },
+      {
+        'title': 'G',
+        'img': 'assets/imgs/G.png',
+        'Link': '/G',
+      },
+      {
+        'title': 'H',
+        'img': 'assets/imgs/H.png',
+        'Link': '/H',
+      },
+      {
+        'title': 'I',
+        'img': 'assets/imgs/I.png',
+        'Link': '/I',
+      },
+      {
+        'title': 'J',
+        'img': 'assets/imgs/J.png',
+        'Link': '/J',
+      },
+      {
+        'title': 'K',
+        'img': 'assets/imgs/K.png',
+        'Link': '/K',
+      },
+      {
+        'title': 'L',
+        'img': 'assets/imgs/L.png',
+        'Link': '/L',
+      },
+      {
+        'title': 'M',
+        'img': 'assets/imgs/M.png',
+        'Link': '/M',
+      },
+      {
+        'title': 'N',
+        'img': 'assets/imgs/N.png',
+        'Link': '/N',
+      },
+      {
+        'title': 'O',
+        'img': 'assets/imgs/O.png',
+        'Link': '/O',
+      },
+      {
+        'title': 'P',
+        'img': 'assets/imgs/P.png',
+        'Link': '/P',
+      },
+      {
+        'title': 'Q',
+        'img': 'assets/imgs/Q.png',
+        'Link': '/Q',
+      },
+      {
+        'title': 'R',
+        'img': 'assets/imgs/R.png',
+        'Link': '/R',
+      },
+      {
+        'title': 'S',
+        'img': 'assets/imgs/S.png',
+        'Link': '/S',
+      },
+      {
+        'title': 'T',
+        'img': 'assets/imgs/T.png',
+        'Link': '/T',
+      },
+      {
+        'title': 'U',
+        'img': 'assets/imgs/U.png',
+        'Link': '/U',
+      },
+      {
+        'title': 'V',
+        'img': 'assets/imgs/V.png',
+        'Link': '/V',
+      },
+      {
+        'title': 'W',
+        'img': 'assets/imgs/W.png',
+        'Link': '/W',
+      },
+      {
+        'title': 'X',
+        'img': 'assets/imgs/X.png',
+        'Link': '/X',
+      },
+      {
+        'title': 'Y',
+        'img': 'assets/imgs/Y.png',
+        'Link': '/Y',
+      },
+      {
+        'title': 'Z',
+        'img': 'assets/imgs/Z.png',
+        'Link': '/Z',
+      }
+    ];
 
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
@@ -281,8 +226,13 @@ class HorizontalScrollCard extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => CardPage(title: card['title'], image: card['img'] , description: card['data'])),
+                  MaterialPageRoute(
+                      builder: (context) => CardPage(
+                          title: card['title'],
+                          image: card['img'],
+                          description: card['data'])),
                 );
+
               },
               child: Container(
                 margin: EdgeInsets.all(10),
@@ -305,7 +255,6 @@ class HorizontalScrollCard extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       height: 170,
-                      child: Image.asset(card['img']),
                       decoration: const BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.only(
@@ -313,6 +262,8 @@ class HorizontalScrollCard extends StatelessWidget {
                           topRight: Radius.circular(20),
                         ),
                       ),
+                      child: Hero(
+                          tag: "${card['title']}", child: Image.asset(card['img'])),
                     ),
                     SizedBox(height: 10),
                     Text(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class CardPage extends StatefulWidget {
@@ -18,12 +19,45 @@ class _CardPageState extends State<CardPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffF3F5F9),
+      backgroundColor: const Color(0xffF3F5F9),
       appBar: AppBar(
-        backgroundColor: Color(0xff4339E7),
-        title: Text(
-          widget.title,
-          style: TextStyle(fontFamily: "Poppins"),
+        backgroundColor: const Color(0xffF3F5F9),
+        elevation: 0,
+        leading:  InkWell(
+          onTap: (){
+            Navigator.pop(context);
+          },
+          child: Container(
+            width: 20,
+            height: 25,
+            margin: const EdgeInsets.only(
+              left: 20,
+              top: 20
+            ),
+            decoration: BoxDecoration(
+              // border: Border.all(width: 2 , color: Colors.black),
+              color: Color(0xff4339E7),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: const Center(
+              child: FaIcon(
+                FontAwesomeIcons.leftLong,
+                color:  Colors.white,
+                size: 20.0,
+              ),
+            ),
+          ),
+        ),
+
+        centerTitle: true,
+        title: Column(
+          children: [
+            SizedBox(height: 23),
+            Text(
+              "AlphaBate ${widget.title}",
+              style: const TextStyle(fontFamily: "Poppins" , color:  Color(0xff4339E7)),
+            ),
+          ],
         ),
       ),
       body: Column(
@@ -33,11 +67,10 @@ class _CardPageState extends State<CardPage> {
             children: [
               Center(
                 child: Container(
-                  //
                   width: 390,
                   height: 200,
                   margin: const EdgeInsets.only(bottom: 25, top: 25),
-                  child: Image.asset(widget.image),
+                  child: Hero( tag: widget.title,  child: Image.asset(widget.image)),
                 ),
               ),
             ],
@@ -56,11 +89,9 @@ class _CardPageState extends State<CardPage> {
                     String link = item['link'] as String;
                     return GestureDetector(
                       onTap: () {
-                        print("The link is " + link!);
                         final videoURL = link;
                         final videoID =
                             YoutubePlayer.convertUrlToId(videoURL) as String;
-                        print("The ID is " + videoID);
                         YoutubePlayerController _controller =
                             YoutubePlayerController(
                           initialVideoId: videoID,
@@ -69,6 +100,7 @@ class _CardPageState extends State<CardPage> {
                             mute: false,
                           ),
                         );
+
                         showModalBottomSheet(
                           isScrollControlled: true,
                           clipBehavior: Clip.antiAlias,
@@ -110,7 +142,7 @@ class _CardPageState extends State<CardPage> {
                                       bottomActions: [
                                         CurrentPosition(),
                                         ProgressBar(isExpanded: true),
-                                        PlaybackSpeedButton(),
+                                        const PlaybackSpeedButton(),
                                         RemainingDuration(),
                                       ],
                                     ),
@@ -141,11 +173,11 @@ class _CardPageState extends State<CardPage> {
                         );
                       },
                       child: Container(
-                        margin: EdgeInsets.all(10),
+                        margin: const EdgeInsets.all(10),
                         width: 170,
                         height: 220,
                         decoration: BoxDecoration(
-                          color: Color(0xff4339E7),
+                          color: const Color(0xff4339E7),
                           boxShadow: [
                             BoxShadow(
                               color: Colors.grey.withOpacity(0.5),
