@@ -46,6 +46,11 @@ dependencies:
   google_nav_bar: ^5.0.6
   youtube_player_flutter: ^8.1.2
   modal_bottom_sheet: ^2.1.2
+  flutter_tts: ^3.6.3
+  flip_card: ^0.7.0
+  speech_to_text: ^6.1.1
+
+
 
 
 dev_dependencies:
@@ -74,6 +79,7 @@ flutter:
   assets:
     - assets/introduction_animation/
     - assets/imgs/
+    - assets/
 
 
 
@@ -111,6 +117,13 @@ flutter:
         - asset: assets/fonts/Poppins-Thin.ttf
         - asset: assets/fonts/Poppins-ThinItalic.ttf
           style: italic
+
+    - family: Comfortaa
+      fonts:
+        - asset: assets/fonts/Comfortaa-Bold.ttf
+        - asset: assets/fonts/Comfortaa-Light.ttf
+        - asset: assets/fonts/Comfortaa-Medium.ttf
+        - asset: assets/fonts/Comfortaa-Regular.ttf
 
   #
   # For details regarding fonts from package dependencies,
