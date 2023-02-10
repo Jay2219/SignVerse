@@ -7,6 +7,7 @@
   import 'package:ssip_signverse_project/Screen/DictionaryScreen.dart';
   import 'package:ssip_signverse_project/Screen/MainScreen.dart';
   import 'package:ssip_signverse_project/Screen/UserScreen.dart';
+import 'package:ssip_signverse_project/sectionOne/firstSection.dart';
   
   // ignore: camel_case_types
   class BottomNavigation_Bar extends StatefulWidget {
@@ -37,8 +38,8 @@
       const MainScreen(),
       const CameraScreen(),
       const DictionaryScreen(),
-      const UserScreen(),
-      const UserScreen(),
+      // const UserScreen(),
+      SpeechScreen()
     ];
     PageController controller = PageController();
 
@@ -115,9 +116,9 @@
                     ),
                     GButton(
                       gap: gap,
-                      icon: LineIcons.cog,
+                      icon: LineIcons.comment,
                       iconColor: Colors.black,
-                      text: 'Setting',
+                      text: 'Conversation',
                       iconActiveColor: const Color(0xff4339E7),
                       textColor: const Color(0xff4339E7),
                       backgroundColor: const Color(0xff4339E7).withOpacity(0.2),

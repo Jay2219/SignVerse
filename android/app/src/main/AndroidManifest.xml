@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ssip_signverse_project">
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
    <application
         android:label="SignVerse"
         android:name="${applicationName}"

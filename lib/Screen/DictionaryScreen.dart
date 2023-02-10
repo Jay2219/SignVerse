@@ -140,16 +140,13 @@ class _DictionaryScreenState extends State<DictionaryScreen> {
                               ),
                             ),
                             SizedBox(height: 10),
-                            const Hero(
-                              tag: 'catagories',
-                              child: Text(
-                                "Deaf Catagories",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontFamily: "Poppins",
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16,
-                                ),
+                            Text(
+                              "Deaf Catagories",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: "Poppins",
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
                               ),
                             )
                           ],
@@ -199,16 +196,13 @@ class _DictionaryScreenState extends State<DictionaryScreen> {
                               ),
                             ),
                             SizedBox(height: 10),
-                            const Hero(
-                              tag: 'catagories',
-                              child: Text(
-                                "Normal Catagories",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontFamily: "Poppins",
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16,
-                                ),
+                            Text(
+                              "Normal Catagories",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: "Poppins",
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
                               ),
                             )
                           ],
