@@ -21,7 +21,6 @@ Here's a brief high-level overview of the tech stack the Well app uses:
 - For persistent storage (database), the app uses the [Firebase](https://firebase.google.com/) package which allows the app to create a custom storage schema and save it to a local database.
 - To send local push notifications, the app uses the [flutter_local_notifications](https://pub.dev/packages/flutter_local_notifications) package which supports Android, iOS, and macOS.
 - To run Machine Learning Model on application, the app uses the [flutter_tflite](https://pub.dev/packages/flutter_tflite) package which supports Android and iOS.
-- To 
 
 ## Key Features
 
