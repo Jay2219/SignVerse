@@ -76,7 +76,7 @@ class RelaxView extends StatelessWidget {
               SlideTransition(
                 position: _relaxAnimation,
                 child: const Text(
-                  "Relax",
+                  "Speech To Text",
                   style: TextStyle(fontSize: 26.0, fontWeight: FontWeight.bold , fontFamily: "Poppins"),
                 ),
               ),
@@ -86,7 +86,7 @@ class RelaxView extends StatelessWidget {
                   padding:
                       EdgeInsets.only(left: 64, right: 64, top: 16, bottom: 16),
                   child: Text(
-                    "Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore",
+                    "Transcribes spoken words into written text through the process of speech recognition, language modeling, and post-processing",
                     textAlign: TextAlign.center, style: TextStyle(fontFamily: "Poppins" , fontSize: 13),
                   ),
                 ),
@@ -96,7 +96,7 @@ class RelaxView extends StatelessWidget {
                 child: Container(
                   constraints: BoxConstraints(maxWidth: 350, maxHeight: 250),
                   child: Image.asset(
-                    'assets/introduction_animation/relax_image.png',
+                    'assets/introduction_animation/speechText.png',
                     fit: BoxFit.contain,
                   ),
                 ),

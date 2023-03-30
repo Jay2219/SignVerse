@@ -86,7 +86,7 @@ class CareView extends StatelessWidget {
                   child: Container(
                     constraints: BoxConstraints(maxWidth: 350, maxHeight: 250),
                     child: Image.asset(
-                      'assets/introduction_animation/care_image.png',
+                      'assets/introduction_animation/dictionary.png',
                       fit: BoxFit.contain,
                     ),
                   ),
@@ -97,7 +97,7 @@ class CareView extends StatelessWidget {
                 child: SlideTransition(
                   position: _relaxSecondHalfAnimation,
                   child: const Text(
-                    "Care",
+                    "Dictionary",
                     style:
                         TextStyle(fontSize: 26.0, fontWeight: FontWeight.bold ,fontFamily: "Poppins"),
                   ),
@@ -107,7 +107,7 @@ class CareView extends StatelessWidget {
                 padding:
                     EdgeInsets.only(left: 64, right: 64, bottom: 16, top: 16),
                 child: Text(
-                  "Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore",
+                  "A dictionary feature for sign language and text video provides a way to translate signed words and gestures into written text or spoken language, enabling effective communication between people who use sign language and those who do not.",
                   textAlign: TextAlign.center,
                   style: TextStyle(fontFamily: "Poppins"),
                 ),

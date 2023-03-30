@@ -39,7 +39,8 @@ import 'package:ssip_signverse_project/sectionOne/firstSection.dart';
       const CameraScreen(),
       const DictionaryScreen(),
       // const UserScreen(),
-      SpeechScreen()
+      SpeechScreen(),
+
     ];
     PageController controller = PageController();
 
@@ -79,6 +80,7 @@ import 'package:ssip_signverse_project/sectionOne/firstSection.dart';
                 child: GNav(
                   curve: Curves.fastOutSlowIn,
                   selectedIndex: _index,
+                  haptic: true,
                   duration: const Duration(milliseconds: 500),
                   tabs: [
                     GButton(
