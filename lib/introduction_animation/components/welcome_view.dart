@@ -63,9 +63,10 @@ class WelcomeView extends StatelessWidget {
               SlideTransition(
                 position: _welcomeImageAnimation,
                 child: Container(
-                  constraints: const BoxConstraints(maxWidth: 350, maxHeight: 350),
+                  constraints:
+                      const BoxConstraints(maxWidth: 350, maxHeight: 350),
                   child: Image.asset(
-                    'assets/introduction_animation/welcome.png',
+                    'assets/introduction_animation/welcome.gif',
                     fit: BoxFit.contain,
                   ),
                 ),
@@ -74,16 +75,19 @@ class WelcomeView extends StatelessWidget {
                 position: _welcomeFirstHalfAnimation,
                 child: const Text(
                   "Welcome",
-                  style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold ,fontFamily: "Poppins"),
+                  style: TextStyle(
+                      fontSize: 25.0,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: "Poppins"),
                 ),
               ),
               const Padding(
                 padding:
                     EdgeInsets.only(left: 64, right: 64, top: 16, bottom: 16),
-                child:  Text(
+                child: Text(
                   "Stay organised and live stress-free with Sign-Verse app",
                   textAlign: TextAlign.center,
-                    style: TextStyle(fontFamily: "Poppins"),
+                  style: TextStyle(fontFamily: "Poppins"),
                 ),
               ),
             ],

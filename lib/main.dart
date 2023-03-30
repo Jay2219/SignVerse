@@ -22,7 +22,9 @@ Future<void> main()async{
     home: email == null ? IntroductionAnimationScreen() : HomeScreen(),
   ),);
 }
-//
+
+
+
 // import 'dart:async';
 // import 'package:flutter/material.dart';
 // import 'package:flutter_inappwebview/flutter_inappwebview.dart';
@@ -48,7 +50,7 @@ Future<void> main()async{
 // class _MyAppState extends State<MyApp> {
 //   @override
 //   Widget build(BuildContext context) {
-//     return const MaterialApp(home: InAppWebViewPage());
+//     return const MaterialApp(debugShowCheckedModeBanner: false , home: InAppWebViewPage());
 //   }
 // }
 //
@@ -65,7 +67,7 @@ Future<void> main()async{
 //   @override
 //   Widget build(BuildContext context) {
 //     return Scaffold(
-//         appBar: AppBar(title: const Text("InAppWebView")),
+//         appBar: AppBar(title: const Text("Sign Language to text Converter" , style: TextStyle(fontFamily: "poppins"),) , backgroundColor: Color(0xff4339E7),),
 //         body: Container(
 //           height: MediaQuery.of(context).size.height,
 //           width: MediaQuery.of(context).size.width,

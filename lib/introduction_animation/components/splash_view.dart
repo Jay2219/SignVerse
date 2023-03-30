@@ -28,7 +28,9 @@ class _SplashViewState extends State<SplashView> {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 120,),
+            SizedBox(
+              height: 120,
+            ),
             //Background Image
             SizedBox(
               width: MediaQuery.of(context).size.width,
@@ -43,7 +45,10 @@ class _SplashViewState extends State<SplashView> {
               padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
               child: Text(
                 "Sign Verse",
-                style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold , fontFamily: "Poppins"),
+                style: TextStyle(
+                    fontSize: 25.0,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: "Poppins"),
               ),
             ),
 
@@ -51,8 +56,9 @@ class _SplashViewState extends State<SplashView> {
             const Padding(
               padding: EdgeInsets.only(left: 64, right: 64),
               child: Text(
-                "Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore",
-                textAlign: TextAlign.center, style: TextStyle(fontFamily: "Poppins" , fontSize: 12),
+                "ConVerse with SignVerse",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontFamily: "Poppins", fontSize: 12),
               ),
             ),
 
@@ -70,7 +76,7 @@ class _SplashViewState extends State<SplashView> {
                 },
                 child: Container(
                   height: 58,
-                  padding:const EdgeInsets.only(
+                  padding: const EdgeInsets.only(
                     left: 56.0,
                     right: 56.0,
                     top: 16,

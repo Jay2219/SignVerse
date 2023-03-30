@@ -80,8 +80,11 @@ class MoodDiaryVew extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                "Mood Dairy",
-                style: TextStyle(fontSize: 26.0, fontWeight: FontWeight.bold , fontFamily: "Poppins"),
+                "Sign To Text Conversion",
+                style: TextStyle(
+                    fontSize: 26.0,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: "Poppins"),
               ),
               SlideTransition(
                 position: _moodFirstHalfAnimation,
@@ -91,7 +94,7 @@ class MoodDiaryVew extends StatelessWidget {
                     padding: EdgeInsets.only(
                         left: 64, right: 64, top: 16, bottom: 16),
                     child: Text(
-                      "Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore",
+                      "The sign language to text conversion feature uses advanced technology to transcribe sign language gestures into written text, bridging the communication gap between sign language users and non-sign language users.",
                       textAlign: TextAlign.center,
                       style: TextStyle(fontFamily: "Poppins"),
                     ),
@@ -103,9 +106,10 @@ class MoodDiaryVew extends StatelessWidget {
                 child: SlideTransition(
                   position: _imageSecondHalfAnimation,
                   child: Container(
-                    constraints: const BoxConstraints(maxWidth: 350, maxHeight: 250),
+                    constraints:
+                        const BoxConstraints(maxWidth: 350, maxHeight: 250),
                     child: Image.asset(
-                      'assets/introduction_animation/mood_dairy_image.png',
+                      'assets/introduction_animation/sign_to_text.png',
                       fit: BoxFit.contain,
                     ),
                   ),
